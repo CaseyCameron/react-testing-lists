@@ -6,5 +6,8 @@ describe('Avatar Characters Container', () => {
   it('displays a list of Avatar characters', async () => {
     render(<Characters />);
     screen.getByText('Loading...');
+
+    const ul = await screen.findByRole('list');
+    expect(ul).not.toBeEmptyDOMElement();
   })
 });
