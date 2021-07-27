@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Character from '../components/characters/Character';
+import Characters from '../components/characters/CharacterList';
 import { fetchCharacters } from '../services/CharacterFetch';
 
 export default class AvatarCharacters extends Component {
@@ -17,6 +17,6 @@ export default class AvatarCharacters extends Component {
     const { characters, loading } = this.state;
     if (loading) return <h1> Loading...</h1>;
 
-    return <Character characters={characters} />
+    return <Characters characters={characters} />
   }
 }
