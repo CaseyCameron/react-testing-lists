@@ -4,8 +4,8 @@ export const fetchCharacters = async () => {
   return json;
 }
 
-export const fetchCharactersById = async (id) => {
-  const res = await fetch(`https://last-airbender-api.herokuapp.com/api/v1/characters${id}`);
+export const fetchCharacterById = async (id) => {
+  const res = await fetch(`https://last-airbender-api.herokuapp.com/api/v1/characters/${id}`);
   const json = await res.json();
   return json;
 }
