@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Characters from '../components/characters/CharacterList';
 import { fetchCharacters } from '../services/CharacterFetch';
 
-export default class AvatarCharacters extends Component {
+export default class ListAvatarCharacters extends Component {
   state = {
     loading: true,
     characters: [],
