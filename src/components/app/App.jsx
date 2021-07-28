@@ -12,7 +12,7 @@ export default function App() {
   return (
     <Router>
       <div>
-        <Link to={'/'}>Home</Link>
+        <Link to={'/'}>Avatar Characters Home</Link>
         <Switch>
           <Route exact path='/' component={ListAvatarCharacters} />
           <Route exact path='/:_id' component={CharactersDetails} />
